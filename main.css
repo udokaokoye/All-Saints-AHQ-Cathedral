@@ -1,0 +1,1174 @@
+/* No CSS */
+/* No CSS */
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.hide {
+  display: none;
+}
+
+body {
+  overflow-x: hidden;
+  color: white;
+  font-family: sans-serif;
+  background-image: -webkit-gradient(linear, right top, left top, from(#434343), to(black));
+  background-image: linear-gradient(to left, #434343 0%, black 100%);
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: transparent;
+}
+
+/* preloader */
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background-color: black; */
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.preloader::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  -webkit-transition: 1s;
+  transition: 1s;
+  background-color: black;
+}
+
+.preloader.complete::before {
+  left: -50%;
+}
+
+.preloader.complete::after {
+  right: -50%;
+}
+
+.preloader::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  -webkit-transition: 1s;
+  transition: 1s;
+  background-color: black;
+}
+
+.preloader.complete {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+/* Loader Icon Design By Udokovic Soft */
+.loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 40px;
+  height: 40px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 3px solid white;
+  -webkit-animation: animate 2s linear infinite;
+          animation: animate 2s linear infinite;
+  z-index: 100000;
+}
+
+.loader::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fff;
+  -webkit-animation: animatebg 2s linear infinite;
+          animation: animatebg 2s linear infinite;
+}
+
+@-webkit-keyframes animate {
+  0% {
+    -webkit-transform: translate(-50%, -50%) rotate(0deg);
+            transform: translate(-50%, -50%) rotate(0deg);
+  }
+  25% {
+    -webkit-transform: translate(-50%, -50%) rotate(180deg);
+            transform: translate(-50%, -50%) rotate(180deg);
+  }
+  50% {
+    -webkit-transform: translate(-50%, -50%) rotate(180deg);
+            transform: translate(-50%, -50%) rotate(180deg);
+  }
+  75% {
+    -webkit-transform: translate(-50%, -50%) rotate(360deg);
+            transform: translate(-50%, -50%) rotate(360deg);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%) rotate(360deg);
+            transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+@keyframes animate {
+  0% {
+    -webkit-transform: translate(-50%, -50%) rotate(0deg);
+            transform: translate(-50%, -50%) rotate(0deg);
+  }
+  25% {
+    -webkit-transform: translate(-50%, -50%) rotate(180deg);
+            transform: translate(-50%, -50%) rotate(180deg);
+  }
+  50% {
+    -webkit-transform: translate(-50%, -50%) rotate(180deg);
+            transform: translate(-50%, -50%) rotate(180deg);
+  }
+  75% {
+    -webkit-transform: translate(-50%, -50%) rotate(360deg);
+            transform: translate(-50%, -50%) rotate(360deg);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%) rotate(360deg);
+            transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+@-webkit-keyframes animatebg {
+  0% {
+    height: 10%;
+  }
+  25% {
+    height: 0;
+  }
+  50% {
+    height: 100%;
+  }
+  75% {
+    height: 100%;
+  }
+  100% {
+    height: 0;
+  }
+}
+
+@keyframes animatebg {
+  0% {
+    height: 10%;
+  }
+  25% {
+    height: 0;
+  }
+  50% {
+    height: 100%;
+  }
+  75% {
+    height: 100%;
+  }
+  100% {
+    height: 0;
+  }
+}
+
+#totop {
+  z-index: 10000;
+  background-color: black;
+  color: white;
+  position: fixed;
+  right: 2px;
+  bottom: 2px;
+  border: 1px solid transparent;
+  padding: 6px;
+  border-radius: 6px;
+}
+
+#totop:hover {
+  background-color: white;
+  color: black;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  border: 1px solid black;
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+}
+
+.nav {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.main-nav {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main-nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main-nav ul li {
+  color: white;
+  margin-left: 25px;
+  padding: 10px;
+}
+
+.nav-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav-header h1 {
+  margin-left: 15px;
+  color: white;
+}
+
+.nav-links:hover {
+  background-color: white;
+  border: 2px solid black;
+  color: black;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+#nav-active {
+  border: 2px solid white;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.first-view {
+  -webkit-animation: slider 16s ease-in-out infinite;
+          animation: slider 16s ease-in-out infinite;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-attachment: fixed;
+}
+
+@-webkit-keyframes slider {
+  0%, 100% {
+    background-image: url(./images/pic.jpg);
+  }
+  50% {
+    background-image: url(./images/pic2.jpg);
+  }
+  75% {
+    background-image: url(./images/pic3.jpg);
+  }
+  95% {
+    background-image: url(./images/pic4.jpg);
+  }
+}
+
+@keyframes slider {
+  0%, 100% {
+    background-image: url(./images/pic.jpg);
+  }
+  50% {
+    background-image: url(./images/pic2.jpg);
+  }
+  75% {
+    background-image: url(./images/pic3.jpg);
+  }
+  95% {
+    background-image: url(./images/pic4.jpg);
+  }
+}
+
+.show-text {
+  margin: 0 auto;
+  color: white;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 80vh;
+}
+
+[data-aos="miracle"] {
+  -webkit-transform: translateX(500px);
+          transform: translateX(500px);
+  opacity: 0;
+  -webkit-transition-property: opacity, -webkit-transform;
+  transition-property: opacity, -webkit-transform;
+  transition-property: transform, opacity;
+  transition-property: transform, opacity, -webkit-transform;
+}
+
+[data-aos="miracle"].aos-animate {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  opacity: 1;
+}
+
+[data-aos="arena"] {
+  -webkit-transform: translateX(-500px);
+          transform: translateX(-500px);
+  opacity: 0;
+  -webkit-transition-property: opacity, -webkit-transform;
+  transition-property: opacity, -webkit-transform;
+  transition-property: transform, opacity;
+  transition-property: transform, opacity, -webkit-transform;
+}
+
+[data-aos="arena"].aos-animate {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  opacity: 1;
+}
+
+[data-aos="bu"] {
+  -webkit-transform: translateY(200px);
+          transform: translateY(200px);
+  opacity: 0;
+}
+
+[data-aos="bu"]:hover {
+  -webkit-transform: scale(0.19);
+          transform: scale(0.19);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+[data-aos="bu"].aos-animate {
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+  opacity: 1;
+}
+
+.show-text h3 {
+  font-size: 80px;
+}
+
+.show-text h5 {
+  font-size: 70px;
+}
+
+.show-text p span {
+  margin-left: 10px;
+  font-size: 14px;
+  color: #d3d1d1;
+}
+
+.show-btn {
+  background: transparent;
+  width: 195px;
+  padding: 1rem;
+  color: white;
+  border: 2px solid white;
+}
+
+.show-btn:hover {
+  background-color: white;
+  color: black;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  border: 2px solid white;
+}
+
+/* New Here Section */
+.new {
+  width: 55%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100%;
+  margin: 0 auto;
+  color: #fff;
+}
+
+.demo1 {
+  width: 100%;
+  height: 60vh;
+  background-image: url(./images/bg2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.more-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.more-section button {
+  margin-left: 25px;
+}
+
+#abt-btn {
+  background: transparent;
+}
+
+#abt-btn:hover {
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+/* Gallery Section */
+.gallery #show {
+  padding: 1rem;
+}
+
+.gallery:hover {
+  -webkit-transition: all 0.7s ease;
+  transition: all 0.7s ease;
+}
+
+.gal-effect:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transition: all 0.9s ease;
+  transition: all 0.9s ease;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* footer */
+.footer {
+  padding: 2rem;
+  width: 100%;
+  height: auto;
+  background-color: #201A16;
+}
+
+.footer-inner {
+  display: -ms-grid;
+  display: grid;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-columns: (200px)[auto-fit];
+      grid-template-columns: repeat(auto-fit, 200px);
+  width: 100%;
+  margin: 0 auto;
+}
+
+.footer p {
+  color: white;
+  font-size: 30px;
+}
+
+.footer div {
+  text-align: center;
+}
+
+.social-links {
+  width: 50%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.social-links a {
+  text-align: center;
+  text-decoration: none;
+  color: white;
+}
+
+#fb {
+  font-size: 40px;
+  color: #1877F2;
+}
+
+#twi {
+  font-size: 40px;
+  color: #1EA3B9;
+}
+
+#you {
+  font-size: 40px;
+  color: #f81010;
+}
+
+/* Services */
+.services {
+  padding: 1rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (400px)[3];
+      grid-template-columns: repeat(3, 400px);
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.service-img img {
+  width: 100%;
+}
+
+.service-text-heading {
+  font-size: 25px;
+}
+
+.service-text {
+  text-align: center;
+  width: 100%;
+}
+
+.live-countdown {
+  border: 1px white solid;
+  height: auto;
+  padding: 3rem;
+  text-align: center;
+  width: 100%;
+}
+
+.live-countdown h3, .live-countdown p {
+  width: 100%;
+}
+
+.count {
+  margin-left: 20px;
+}
+
+[data-aos="fly"] {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  opacity: 0;
+  -webkit-transition-property: opacity, -webkit-transform;
+  transition-property: opacity, -webkit-transform;
+  transition-property: transform, opacity;
+  transition-property: transform, opacity, -webkit-transform;
+}
+
+[data-aos="fly"]:hover {
+  -webkit-transform: scale(1.09);
+          transform: scale(1.09);
+}
+
+[data-aos="fly"].aos-animate {
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
+  opacity: 1;
+}
+
+.live-countdown:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.09);
+          transform: scale(1.09);
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+}
+
+/* Vicar General */
+.vicar {
+  width: 100%;
+  height: 60vh;
+  background-image: url(./images/bg4.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 40% 60% 70%;
+      grid-template-columns: 40% 60% 70%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.vicar-inner {
+  border: 1px solid #c7c7c7;
+  width: 75%;
+  height: 70%;
+  padding: 80px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.vicar-text {
+  margin-right: 50px;
+}
+
+.vicar-text-name {
+  font-size: 40px;
+  text-align: right;
+}
+
+.vicar-text-description {
+  width: 100%;
+  text-align: center;
+}
+
+.button {
+  padding: 8px;
+  border-radius: 6px;
+  color: #1a7beb;
+  border: 1px solid #1a7beb;
+}
+
+.button:hover {
+  color: white;
+  background-color: #1a7beb;
+  -webkit-transition: all 0.6s linear;
+  transition: all 0.6s linear;
+  border: 1px solid white;
+  text-align: right;
+}
+
+/* ************************************************** */
+/* Sermon Page */
+.sermon-back-drop {
+  -webkit-animation: sermon-slider 25s ease-in infinite;
+          animation: sermon-slider 25s ease-in infinite;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.sermon-cover {
+  height: 100vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.sermon-cover i {
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 50%;
+  padding: 10px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.sermon-cover i {
+  color: white;
+}
+
+.sermon-cover i:hover {
+  background-color: white;
+  color: black;
+  -webkit-transition: 0.5s all ease-in-out;
+  transition: 0.5s all ease-in-out;
+  cursor: pointer;
+}
+
+.sermon-cover h3 {
+  font-size: 60px;
+  text-align: center;
+  margin-right: 60px;
+}
+
+.sermon {
+  width: 100%;
+  height: auto;
+}
+
+.sermon-first {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 40%;
+  margin: 0 auto;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 0;
+          column-gap: 0;
+  row-gap: 0;
+  margin-bottom: 30px;
+  padding: 10px;
+}
+
+.sermon-dropown {
+  background-image: url(./images/stones.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.sermon-btn {
+  padding: 10px;
+  background: transparent;
+  color: white;
+  border-radius: 6px;
+  border: 1px solid white;
+  margin-left: 10px;
+}
+
+.sermon-btn:hover {
+  background-color: black;
+  -webkit-transform: scale(1.06);
+          transform: scale(1.06);
+  color: white;
+  -webkit-transition: 0.5s all ease-in;
+  transition: 0.5s all ease-in;
+}
+
+@-webkit-keyframes sermon-slider {
+  0%, 100% {
+    background-image: url(./images/Bible.jpg);
+  }
+  75% {
+    background-image: url(./images/Boy-laughing-with-bible.jpg);
+  }
+}
+
+@keyframes sermon-slider {
+  0%, 100% {
+    background-image: url(./images/Bible.jpg);
+  }
+  75% {
+    background-image: url(./images/Boy-laughing-with-bible.jpg);
+  }
+}
+
+.prayer-request {
+  background-color: white;
+  color: black;
+}
+
+.form-con {
+  width: 40%;
+  margin: 0 auto;
+}
+
+.media {
+  width: 100%;
+  height: 100vh;
+  background-image: url(./images/Worshi-hand-raised.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-animation: media-slider 25s ease-in infinite;
+          animation: media-slider 25s ease-in infinite;
+}
+
+@-webkit-keyframes media-slider {
+  0%, 100% {
+    background-image: url(./images/Worshi-hand-raised.jpg);
+  }
+  50% {
+    background-image: url(./images/worship-hand-up.jpg);
+  }
+  75% {
+    background-image: url(./images/Worship-screen.jpg);
+  }
+}
+
+@keyframes media-slider {
+  0%, 100% {
+    background-image: url(./images/Worshi-hand-raised.jpg);
+  }
+  50% {
+    background-image: url(./images/worship-hand-up.jpg);
+  }
+  75% {
+    background-image: url(./images/Worship-screen.jpg);
+  }
+}
+
+.worship-btn {
+  padding: 10px;
+  border-radius: 6px;
+}
+
+.head-main {
+  height: 80vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.worship-center-side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.worship-center-side h3 {
+  font-size: 60px;
+  text-align: center;
+}
+
+.media-inner {
+  height: auto;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: white;
+}
+
+.audio-series {
+  width: 50%;
+  height: 50vh;
+  background-color: red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: url(./images/sincerely-media-dGxOgeXAXm8-unsplash.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.audio-series h1 {
+  font-size: 50px;
+}
+
+.audio-series .audio-section {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.audio-series .audio-section .icon_head {
+  width: 100%;
+}
+
+.audio-series .audio-section i {
+  font-size: 40px;
+}
+
+.audio-series .audio-section .listen-btns {
+  width: 100%;
+}
+
+.audio-series .audio-section .list-btn {
+  padding: 6px;
+  border-radius: 6px;
+  background-color: transparent;
+  color: white;
+}
+
+.audio-series .audio-section .list-btn:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.media-sermon-audio {
+  width: 50%;
+  height: 50vh;
+  background-color: red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: url(./images/sincerely-media-dGxOgeXAXm8-unsplash.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.media-sermon-audio h3 {
+  font-size: 50px;
+}
+
+.media-sermon-audio h5 {
+  font-size: 15px;
+}
+
+.media-sermon-audio button {
+  padding: 5px;
+  border: 1px solid white;
+  border-radius: 10px;
+  background: transparent;
+  color: white;
+  margin-top: 10px;
+}
+
+.media-sermon-audio button:hover {
+  background-color: white;
+  color: black;
+  -webkit-transition: all 0.6s ease-in-out;
+  transition: all 0.6s ease-in-out;
+  border: 1px solid black;
+}
+
+.media-gallery {
+  width: 50%;
+  height: 50vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url(./images/catolog.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.media-gallery .gal-text {
+  font-size: 50px;
+}
+
+.media-gallery h5 {
+  font-size: 15px;
+}
+
+.media-gallery button {
+  padding: 5px;
+  padding-left: 26px;
+  padding-right: 26px;
+  border: 1px solid white;
+  border-radius: 10px;
+  background: transparent;
+  color: white;
+}
+
+.media-gallery button:hover {
+  background-color: white;
+  color: black;
+  -webkit-transition: all 0.6s ease-in-out;
+  transition: all 0.6s ease-in-out;
+  border: 1px solid black;
+}
+
+.message-of-the-day {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url(./images/reading.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.message-of-the-day h2 {
+  font-size: 80px;
+}
+
+.message-of-the-day i {
+  font-size: 60px;
+  background-color: white;
+  color: black;
+  border-radius: 50%;
+  padding: 10px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  cursor: pointer;
+}
+
+.message-of-the-day i:hover {
+  background-color: black;
+  color: white;
+  -webkit-transition: all 0.6s ease-in-out;
+  transition: all 0.6s ease-in-out;
+}
+
+.message {
+  height: 100vh;
+  width: 100%;
+}
+
+.contact {
+  width: 100%;
+  height: auto;
+  background-image: url(./images/contactpage2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contact-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
+.contact-form {
+  width: 100%;
+  border-right: 1px solid white;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.contact-form input {
+  background-color: transparent;
+  color: white;
+}
+
+.contact-form .form-inner {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.address {
+  border-left: 1px solid white;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding: 5rem;
+  width: 100%;
+  height: 100vh;
+}
+/*# sourceMappingURL=main.css.map */
