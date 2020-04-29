@@ -1,3 +1,4 @@
+
 $(window).on('load', function(){
     $('.preloader').addClass('complete')
     $('.audio-series').hide()
@@ -8,7 +9,33 @@ $('#reveal-audio-series').on('click', () => {
   $('.audio-series').fadeIn()
 })
 
-    AOS.init();
+
+const burger = document.getElementById("menu");
+const nav = document.querySelector(".main-navv");
+
+burger.addEventListener("click", () => {
+    nav.classList.toggle("open");
+    
+})
+
+// RESPONSIVE 
+
+
+
+
+
+// Audio play section
+
+var music1 =  document.getElementById('music1');
+var music2 =  document.getElementById('music2')
+var music3 =  document.getElementById('music3')
+var music4 =  document.getElementById('music4')
+var music5 =  document.getElementById('music5')
+var music6 =  document.getElementById('music6')
+
+
+
+AOS.init();
 
 
 
@@ -46,3 +73,13 @@ $('#reveal-audio-series').on('click', () => {
         document.getElementById('live-btn').classList.remove('hide')
       }
     }, 1000);
+
+
+var today = new Date();
+var dd = String(today.getDate()).padStart(2, '0');
+var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+var yyyy = today.getFullYear();
+
+today = mm + '-' + dd + '-' + yyyy;
+
+document.getElementById('dss-date').innerHTML = today;

@@ -13,9 +13,7 @@
 body {
   overflow-x: hidden;
   color: white;
-  font-family: sans-serif;
-  background-image: -webkit-gradient(linear, right top, left top, from(#434343), to(black));
-  background-image: linear-gradient(to left, #434343 0%, black 100%);
+  background-color: #202121;
 }
 
 a {
@@ -28,10 +26,6 @@ a:hover {
 
 html {
   scroll-behavior: smooth;
-}
-
-body {
-  background-color: transparent;
 }
 
 /* preloader */
@@ -193,16 +187,16 @@ body {
   }
 }
 
-#totop {
-  z-index: 10000;
-  background-color: black;
-  color: white;
+#backtotop {
+  z-index: 400000;
   position: fixed;
-  right: 2px;
+  left: 2px;
   bottom: 2px;
-  border: 1px solid transparent;
-  padding: 6px;
-  border-radius: 6px;
+  background-color: white;
+}
+
+#chev-up {
+  color: black;
 }
 
 #totop:hover {
@@ -418,12 +412,10 @@ body {
 
 /* New Here Section */
 .new {
-  width: 55%;
+  width: 65%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -488,10 +480,17 @@ body {
 
 /* footer */
 .footer {
+  color: #cccccc;
   padding: 2rem;
   width: 100%;
   height: auto;
-  background-color: #201A16;
+  background-color: #202121;
+}
+
+.footer a {
+  color: white;
+  font-weight: bold;
+  text-decoration: underline;
 }
 
 .footer-inner {
@@ -629,7 +628,7 @@ body {
 .vicar {
   width: 100%;
   height: 60vh;
-  background-image: url(./images/bg4.jpg);
+  background-image: url(./images/bg1.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -918,16 +917,6 @@ body {
   width: 50%;
   height: 50vh;
   background-color: red;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -942,19 +931,17 @@ body {
 }
 
 .audio-series .audio-section {
-  width: 100%;
+  width: 70%;
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.audio-series .audio-section .icon_head {
-  width: 100%;
 }
 
 .audio-series .audio-section i {
@@ -966,6 +953,7 @@ body {
 }
 
 .audio-series .audio-section .list-btn {
+  margin-left: 9px;
   padding: 6px;
   border-radius: 6px;
   background-color: transparent;
@@ -1170,5 +1158,488 @@ body {
   padding: 5rem;
   width: 100%;
   height: 100vh;
+}
+
+.worship {
+  background-image: url(./images/Worshi-hand-raised.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}
+
+.worship .worship-inner {
+  width: 100%;
+  height: 80vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.worship .worship-inner h1 {
+  text-align: center;
+}
+
+.worship .worship-inner button {
+  padding: 5px 20px;
+  border-radius: 10px;
+  border: 1px solid white;
+  color: white;
+  background-color: transparent;
+}
+
+.worship .worship-inner button:hover {
+  background-color: white;
+  color: black;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.gallery-page {
+  width: 100%;
+  height: 100vh;
+  background-image: url(./images/gal-cat.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@-webkit-keyframes gallery-slider {
+  0%, 100% {
+    background-image: url(./images/Worshi-hand-raised.jpg);
+  }
+  50% {
+    background-image: url(./images/worship-hand-up.jpg);
+  }
+  75% {
+    background-image: url(./images/Worship-screen.jpg);
+  }
+}
+
+@keyframes gallery-slider {
+  0%, 100% {
+    background-image: url(./images/Worshi-hand-raised.jpg);
+  }
+  50% {
+    background-image: url(./images/worship-hand-up.jpg);
+  }
+  75% {
+    background-image: url(./images/Worship-screen.jpg);
+  }
+}
+
+.gallery-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: 70vh;
+}
+
+.gallery-inner h1 {
+  font-size: 90px;
+}
+
+.gallery-inner h3 {
+  font-size: 40px;
+  font-family: monospace;
+}
+
+.gallery-inner i {
+  display: none;
+  -webkit-transition: display 0.5s ease-in-out;
+  transition: display 0.5s ease-in-out;
+  -webkit-transition-property: display;
+  transition-property: display;
+}
+
+.gallery-inner button {
+  padding: 6px 15px;
+  border-radius: 6px;
+}
+
+.gallery-inner button:hover i {
+  display: inline;
+  -webkit-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+}
+
+.gallery-explore {
+  width: 100%;
+  height: 100vh;
+  background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.dss {
+  width: 100%;
+  height: 100vh;
+  background-image: url(./images/dss-1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-animation: dss-slider 25s ease-in infinite;
+          animation: dss-slider 25s ease-in infinite;
+}
+
+@-webkit-keyframes dss-slider {
+  0%, 100% {
+    background-image: url(./images/dss-1.jpg);
+  }
+  50% {
+    background-image: url(./images/dss-2.jpg);
+  }
+  75% {
+    background-image: url(./images/dss-3.jpg);
+  }
+}
+
+@keyframes dss-slider {
+  0%, 100% {
+    background-image: url(./images/dss-1.jpg);
+  }
+  50% {
+    background-image: url(./images/dss-2.jpg);
+  }
+  75% {
+    background-image: url(./images/dss-3.jpg);
+  }
+}
+
+.dss-inner {
+  width: 100%;
+  height: 80vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.dss-inner h1 {
+  font-size: 60px;
+}
+
+.dss-inner h3 {
+  font-size: 30px;
+}
+
+.dss-inner i {
+  font-size: 50px;
+  cursor: pointer;
+}
+
+.dss-inner i:hover {
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+  -webkit-transition: all 0.6s ease-in-out;
+  transition: all 0.6s ease-in-out;
+}
+
+.dss-main {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 2rem;
+}
+
+.dss-main h1 {
+  text-align: center;
+}
+
+.dss-main p {
+  font-size: 20px;
+}
+
+.dss-main .dss-topic {
+  font-weight: bold;
+  text-align: left;
+}
+
+.dss-main .credits-dss {
+  font-weight: bold;
+  text-align: center;
+}
+
+#menu {
+  display: none;
+  cursor: pointer;
+}
+
+.navv {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  #menu {
+    display: inline;
+    z-index: 50000;
+    font-size: 30px;
+  }
+  .main-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .main-nav .main-navv {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin: 0 auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    position: fixed;
+    background-color: #202121;
+    height: 100vh;
+    text-align: center;
+    clip-path: circle(100px at 90% -20%);
+    -webkit-clip-path: circle(100px at 90% -20%);
+    -webkit-transition: all 1s ease-out;
+    transition: all 1s ease-out;
+    color: white;
+    z-index: 40000;
+  }
+  .main-nav .main-navv.open {
+    clip-path: circle(2000px at 90% -20%);
+    -webkit-clip-path: circle(2000px at 90% -20%);
+    -webkit-transition: all 1s ease-out;
+    transition: all 1s ease-out;
+  }
+  .show-text h3 {
+    font-size: 60px;
+  }
+  .show-text h5 {
+    font-size: 40px;
+  }
+  .services {
+    display: block;
+  }
+  .services .serv-img {
+    display: none;
+  }
+  .demo1 {
+    height: auto;
+    padding: 1rem;
+  }
+  .new {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    height: auto;
+  }
+  .new .more-section {
+    display: block;
+  }
+  .vicar {
+    display: block;
+    height: auto;
+    padding: 1rem;
+  }
+  .vicar .vicar-pic {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  .footer-divs {
+    margin-top: 25px;
+    border-bottom: 1px solid white;
+    border-bottom-left-radius: 9px;
+    border-bottom-right-radius: 9px;
+    padding: 1rem;
+  }
+  .service-footer {
+    border-bottom: 1px solid white;
+    padding: 1rem;
+    border-bottom-left-radius: 9px;
+    border-bottom-right-radius: 9px;
+  }
+  .sermon-back-drop {
+    -webkit-animation: sermon-slider 25s ease-in infinite;
+            animation: sermon-slider 25s ease-in infinite;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+  }
+  .sermon-cover {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 70vh;
+    margin: 0 auto;
+    width: 10%;
+    width: 100%;
+  }
+  .sermon-cover h3 {
+    font-size: 50px;
+  }
+  .sermon {
+    width: 100%;
+  }
+  .sermon-dropown {
+    display: block;
+  }
+  .sermon-first {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .dss-inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .dss-inner h1 {
+    text-align: center;
+  }
+  .dss-inner i {
+    color: white;
+  }
+  .dss-main h1 {
+    font-size: 25px;
+  }
+  .dss-main h3 {
+    font-size: 20px;
+  }
+  .dss-main h5 {
+    font-size: 20px;
+  }
+  .dss-main .dss-text {
+    text-align: left;
+  }
+  .worship-center-side h3 {
+    font-size: 40px;
+  }
+  .worship-center-side h5 {
+    font-size: 17px;
+  }
+  .media-inner {
+    display: block;
+  }
+  .media-inner .media-sermon-audio, .media-inner .media-gallery, .media-inner .audio-series {
+    width: 100%;
+  }
+  .media-inner .media-sermon-audio {
+    text-align: center;
+  }
+  .audio-section {
+    width: 100%;
+  }
+  .audio-section h5 {
+    font-size: 18px;
+  }
+  .audio-section .listen-btns {
+    width: 100%;
+  }
+  .message-of-the-day h2 {
+    font-size: 50px;
+    text-align: center;
+  }
+  .message-of-the-day i {
+    font-size: 25px;
+  }
+  .contact-inner {
+    display: block;
+    height: auto;
+  }
+  .contact-inner .contact-form, .contact-inner .address {
+    border: none;
+  }
+  .contact-inner .address {
+    margin-top: 25px;
+    padding: 0.5rem;
+  }
+  .contact-inner .contact-form {
+    margin-top: 50px;
+  }
+  .form-con {
+    width: 80%;
+  }
 }
 /*# sourceMappingURL=main.css.map */

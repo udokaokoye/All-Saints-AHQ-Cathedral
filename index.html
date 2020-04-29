@@ -9,25 +9,26 @@
   <link rel="stylesheet" href="main.css" />
   <link rel="stylesheet" href="./aos.css" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
-  <link href="./images/Chaplain.jpg" rel="icon" />
+  <link href="./images/chaplain.jpg" rel="icon" />
 </head>
 
 <body>
   <div class="preloader">
     <div class="loader"></div>
   </div>
-  <a href="#top"><i id="totop" class="fas fa-chevron-up"></i></a>
+  <a href="#top"><button id="backtotop" class="btn btn-primary"><i id="chev-up"
+    class="fas fa-chevron-up"></i></button></a>
   <div id="top" class="first-view">
     <nav class="nav">
       <div class="main-nav">
         <div class="nav-header">
           <a href=""><img width="80px" height="80px" src="./images/trans2.png" alt="" /></a>
-          <a href="">
+          <a href="./index.html">
             <h1>Cathedral</h1>
           </a>
         </div>
 
-        <ul>
+        <ul class="main-navv">
           <a href="">
             <li class="nav-links" id="nav-active">Home</li>
           </a>
@@ -47,6 +48,8 @@
             <li class="nav-links">Contact Us</li>
           </a>
         </ul>
+          <i id="menu" class="fas fa-bars"></i>
+        
       </div>
 
       <div class="show-text">
@@ -63,7 +66,7 @@
 
   <div class="services">
     <div class="service-img">
-      <img src="./images/IMG-20200407-WA0039.jpg" alt="">
+      <img class="serv-img" src="./images/IMG-20200407-WA0039.jpg" alt="">
     </div>
     <div class="service-text">
       <h3 class="service-text-heading">Join us live on our different social media platforms</h3>
@@ -77,23 +80,22 @@
     </div>
     <div data-aos="fly" class="live-countdown">
       <h3 id="live-text">Live Service Starts In</h3>
-     <div id="gen-span"><span class="count" id="days"></span><span class="count" id="hours"></span><span class="count"
-        id="mins"></span><span class="count" id="sec"></span></div> 
+      <div id="gen-span"><span class="count" id="days"></span><span class="count" id="hours"></span><span class="count"
+          id="mins"></span><span class="count" id="sec"></span></div>
       <p><button id="live-btn" class="show-btn hide">Watch Us Live</button></p>
     </div>
   </div>
 
   <div class="demo1">
     <div data-aos-delay="300" data-aos="fade-up" class="new">
-      <h1>New Here?</h1>
+      <h1>New Here?</h1><br>
       <div class="more-section">
-        <h3>Find out more about All Saints AHQ</h3>
-        <button id="abt-btn" class="btn btn-secondary abtbtn">
-          Contact Us
-        </button>
+        <h3>Find out more about All Saints AHQ</h3><br>
+        <a href="./contact.html"><button id="abt-btn" class="btn btn-secondary abtbtn">
+            Contact Us
+          </button></a>
       </div>
     </div>
-    <br /><br />
   </div>
   <center>
     <h2 class="gal-effect">Gallery</h2>
@@ -132,12 +134,7 @@
       <div>
         <p class="vicar-text-name" style="color: white; text-align: center;">COL(VEN) NZ DAVOU</p>
         <p style="color: white;" class="vicar-text-description">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum velit
-          veritatis nisi illum, unde praesentium provident cumque quaerat
-          placeat at distinctio aliquam amet pariatur doloribus recusandae quae
-          officiis ab sint. <br /><br /><button class="button">
-            <strong>Learn More</strong>
-          </button>
+          <br /><br />
         </p>
       </div>
     </div>
@@ -148,30 +145,41 @@
   </div>
   <div class="footer">
     <div class="footer-inner">
-      <div>
+      <div class="service-footer">
         <h4>Service Times</h4>
-        EMHCS: 7:30am <br> Main Holy Communion Service: 10:00am <br> Mid-Week Service: 500pm
+        EMHCS: 7:30am <br />
+        Main Holy Communion Service: 10:00am <br />
+        Mid-Week Service: 500pm
       </div>
-      <div>
-        <h4>Media Store</h4>
-        <a href="">THIS SUNDAY'S MESSAGE</a> <br> <a href="">MP3 SERIES</a> <br> <a href="">AUDIO CDS & DVDS</a>
+      <div class="footer-divs">
+        <h4 >Media Store</h4>
+        <a href="media.html#message">THIS SUNDAY'S MESSAGE</a> <br />
+        <a href="./media.html#audio-series-link">MP3 SERIES</a> <br />
+        <a href="./media.html#audio-series-link">AUDIO CDS & DVDS</a>
       </div>
-      <div>
+      <div class="footer-divs">
         <h4>Contact Us</h4>
-        <span>+234 000 000 25</span> <br><span><a href="mailto:udokovicsoft@gmail.com">info@allsaintsahq</a></span><br>
-        All Saints AHQ Cathedral <br> Abalti Barracks, Surulere,<br> Lagos.
+        <span>+234 000 000 25</span> <br /><span
+          ><a href="mailto:udokovicsoft@gmail.com">info@allsaintsahq</a></span
+        ><br />
+        All Saints AHQ Cathedral <br />
+        Abalti Barracks, Surulere,<br />
+        Lagos.
       </div>
-      <div>
+      <div class="footer-divs">
         <h4>Worship Center</h4>
-        <a href="">LISTEN TO WORSHIP SESSIONS</a> <br><a href="">DOWNLOAD WORSHIP SESSIONS</a>
+        <a href="./worshipcenter.html">LISTEN TO WORSHIP SESSIONS</a> <br /><a href="./worshipcenter.html"
+          >DOWNLOAD WORSHIP SESSIONS</a
+        >
       </div>
-    </div><br>
+    </div>
+    <br />
     <div class="social-links">
       <a target="_blank" href="https://www.facebook.com/pg/AllSaintsAHQ"><i id="fb" class="fab fa-facebook"></i></a>
-      <a target="_blank" href=""><i id="twi" class="fab fa-twitter"></i></a>
-      <a target="_blank" href="https://www.youtube.com/channel/UC8zsFfzTbYNjGHZ3gv19HKw"><i id="you"
-          class="fab fa-youtube"></i></a>
-    </div><br>
+      <a href=""><i id="twi" class="fab fa-twitter"></i></a>
+      <a href=""><i id="you" class="fab fa-youtube"></i></a>
+    </div>
+    <br />
     <div>
       <h3 style="text-align: center;">&copy; All Saints AHQ Cathedral</h3>
     </div>
