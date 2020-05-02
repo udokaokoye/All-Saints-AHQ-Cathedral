@@ -178,6 +178,10 @@ html{
 .nav-header{
     display: flex; 
     align-items: center;
+    justify-content: space-around;
+    h1{
+        padding: 0px 20px;
+    }
 }
 
 .nav-header h1{
@@ -1153,6 +1157,13 @@ html{
     display: inline;
     z-index: 50000;
     font-size: 30px;
+    padding: 1rem;
+}
+
+.nav-logo{
+    width: 50px;
+
+    height: 50px;
 }
 // Nav
     .main-nav{
@@ -1396,6 +1407,9 @@ html{
         }
     }
 
+    .live-tv-text{
+        font-size: 28px;
+    }
 }
 
     
@@ -1450,10 +1464,30 @@ html{
         img{
             width: 120px;
         }
+
+        
+    }
+
+    .nav-logo{
+        width: 35px;
+        height: 35px;
     }
 }
 
+@media(max-width: 411px){
+   .nav-header{
+      h1{
+        font-size: 32px;
+      } 
+   }
+}
+
 @media(max-width: 375px){
+    .nav-header{
+        h1{
+            font-size: 30px;
+        }
+    }
     .gallery-explore{
         margin: 0;
         img{
@@ -1477,3 +1511,29 @@ html{
     }
 }
 
+@media(max-width: 360px){
+    .nav-logo{
+        width: 30px;
+        height: 30px;
+    }
+    .nav-header{
+        h1{
+            font-size: 28px;
+        }
+    }
+    #menu{
+        font-size: 25px;
+    }
+}
+
+@media(max-width: 320px){
+    .nav-logo{
+        width: 30px;
+        height: 30px;
+    }
+    .nav-header{
+        h1{
+            font-size: 25px;
+        }
+    }
+}
